@@ -144,14 +144,12 @@ footer {
 }
 
 /* ===========================
-   Hero Section
-   =========================== */
 .hero-section {
     position: relative;
     min-height: 70vh;
     padding-top: 80px;
     background: linear-gradient(135deg, rgba(31, 41, 55, 0.85), rgba(0, 0, 0, 0.4)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="dots" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse"><circle cx="40" cy="40" r="8" fill="%23667084" opacity="0.6"/><circle cx="40" cy="40" r="3" fill="%235a6b7f" opacity="0.8"/></pattern></defs><rect width="1200" height="600" fill="%234b5563"/><rect width="1200" height="600" fill="url(%23dots)"/><circle cx="100" cy="100" r="100" fill="%23667084" opacity="0.1"/><circle cx="1100" cy="500" r="150" fill="%23667084" opacity="0.08"/><path d="M0 0 Q300 150 600 0 T1200 0" fill="none" stroke="%23667084" stroke-width="1" opacity="0.3"/></svg>');
+                url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -160,6 +158,8 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     display: flex;
+    align-items: center;
+}
     align-items: center;
 }
 
@@ -499,7 +499,7 @@ footer {
    =========================== */
 .page-header {
     background: linear-gradient(135deg, rgba(31, 41, 55, 0.85), rgba(0, 0, 0, 0.4)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%234b5563" width="1200" height="600"/><circle cx="100" cy="100" r="80" fill="%23667084" opacity="0.5"/><circle cx="1100" cy="500" r="120" fill="%23667084" opacity="0.3"/></svg>');
+                url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
