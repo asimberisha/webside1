@@ -151,9 +151,10 @@ footer {
     min-height: 70vh;
     padding-top: 80px;
     background-color: #4b5563;
-    background-image: linear-gradient(135deg, rgba(55, 65, 81, 0.5), rgba(75, 85, 99, 0.5)), url('../../images/hero-bg.jpg');
+    background-image: linear-gradient(135deg, rgba(55, 65, 81, 0.3), rgba(75, 85, 99, 0.3)), url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: scroll;
     display: flex;
     align-items: center;
@@ -165,7 +166,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0);
 }
 
 .min-vh-70 {
@@ -488,9 +489,10 @@ footer {
    =========================== */
 .page-header {
     background-color: #4b5563;
-    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/hero-bg.jpg');
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: scroll;
     padding: 5rem 0 3rem;
     text-align: center;
