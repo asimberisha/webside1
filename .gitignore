@@ -1,0 +1,64 @@
+# Node modules (nëse përdorni build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Environment variables (nëse përdorni)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs (nëse përdorni build process)
+dist/
+build/
+.next/
+out/
+
+# Backup files
+*.bak
+*.backup
+
+# Image originals (keep only optimized versions)
+images/originals/
+*.psd
+*.ai
+
+# Large video files (if any)
+*.mov
+*.mp4
+*.avi
+
+# Database backups
+*.sql
+*.sqlite
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
