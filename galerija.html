@@ -265,16 +265,16 @@
             <h2 class="fw-bold text-center mb-5 section-heading-dark">Naši Projekti</h2>
             
             <div class="category-grid">
-                <div class="category-card" onclick="openGallery('jashteme')">
+                <div class="category-card" onclick="openGallery('zunanje')">
                     <div class="category-image">
                         <i class="bi bi-paint-bucket"></i>
                     </div>
-                    <h5>Eksterne Barvanje</h5>
+                    <h5>Zunanje Barvanje</h5>
                     <p>5 Fotografij</p>
                     <button class="btn btn-sm btn-outline-light">Poglej</button>
                 </div>
                 
-                <div class="category-card" onclick="openGallery('zidim')">
+                <div class="category-card" onclick="openGallery('zidanje')">
                     <div class="category-image">
                         <i class="bi bi-hammer"></i>
                     </div>
@@ -283,7 +283,7 @@
                     <button class="btn btn-sm btn-outline-light">Poglej</button>
                 </div>
                 
-                <div class="category-card" onclick="openGallery('renovim')">
+                <div class="category-card" onclick="openGallery('prenova')">
                     <div class="category-image">
                         <i class="bi bi-bricks"></i>
                     </div>
@@ -301,7 +301,7 @@
                     <button class="btn btn-sm btn-outline-light">Poglej</button>
                 </div>
                 
-                <div class="category-card" onclick="openGallery('cati')">
+                <div class="category-card" onclick="openGallery('streha')">
                     <div class="category-image">
                         <i class="bi bi-house"></i>
                     </div>
@@ -383,15 +383,15 @@
     <script>
         // Gallery Data
         const galleries = {
-            jashteme: {
-                name: 'Eksterne Barvanje',
+            zunanje: {
+                name: 'Zunanje Barvanje',
                 images: [59,31,12,9,1]
             },
-            zidim: {
+            zidanje: {
                 name: 'Zidanje',
                 images: [5,8,13,14,18,25,27,29,30,39,62]
             },
-            renovim: {
+            prenova: {
                 name: 'Prenova',
                 images: [44,43,37,38,41,46,47,48,50,51,52,54,57,61,63]
             },
@@ -399,7 +399,7 @@
                 name: 'Hidroizolacija',
                 images: [68,71]
             },
-            cati: {
+            streha: {
                 name: 'Streha in Kritina',
                 images: [64,65,66,67,69,70]
             }
@@ -435,7 +435,7 @@
             
             const img = document.getElementById('modalImage');
             img.onerror = function() {
-                img.src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%234b5563%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%23999%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EFotografia nuk u gjet%3C/text%3E%3C/svg%3E';
+                img.src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%234b5563%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%23999%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EFotografije ni mogoce naloziti%3C/text%3E%3C/svg%3E';
             };
             img.src = imageSrc;
             document.getElementById('currentImage').textContent = currentImageIndex + 1;
