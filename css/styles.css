@@ -128,6 +128,7 @@ footer {
     font-weight: 700;
     letter-spacing: 0.5px;
     white-space: nowrap;
+    line-height: 1;
 }
 
 .navbar-brand:hover {
@@ -142,6 +143,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 8px;
+    line-height: 1;
 }
 
 /* Simple House Logo */
@@ -168,6 +170,9 @@ footer {
     width: 30px;
     height: 30px;
     min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .house-logo-svg-compact {
@@ -176,12 +181,16 @@ footer {
     stroke: #1f2937;
     stroke-width: 1.5;
     fill: none;
+    display: block;
 }
 
 .brand-text-ellipsis {
+    display: inline-flex;
+    align-items: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1;
 }
 
 .navbar-brand:hover .house-logo svg {
@@ -1073,6 +1082,26 @@ footer a:hover {
 @media (min-width: 768px) {
     .gap-md-3 {
         gap: 1rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1,
+    .hero-title {
+        font-size: 32px !important;
+    }
+
+    nav ul,
+    .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-collapse .btn.ms-3 {
+        margin-left: 0 !important;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
     }
 }
 
