@@ -22,9 +22,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html" style="font-family: 'Montserrat', 'Poppins', sans-serif; font-size: clamp(0.75rem, 3vw, 0.95rem); letter-spacing: 0.5px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-                <span class="house-logo" style="width: 30px; height: 30px; min-width: 30px;">
-                    <svg viewBox="0 0 65 52" style="width: 100%; height: 100%; stroke: #1f2937; stroke-width: 1.5; fill: none;">
+            <a class="navbar-brand navbar-brand-compact fw-bold" href="index.html">
+                <span class="house-logo house-logo-compact">
+                    <svg class="house-logo-svg-compact" viewBox="0 0 65 52">
                         <path d="M 5 26 L 32.5 6 L 60 26"/>
                         <line x1="10" y1="24" x2="10" y2="50"/>
                         <line x1="55" y1="24" x2="55" y2="50"/>
@@ -32,9 +32,9 @@
                         <rect x="27" y="35" width="11" height="15"/>
                     </svg>
                 </span>
-                <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">FATMIR BERISHA SP</span>
+                <span class="brand-text-ellipsis">FATMIR BERISHA SP</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Preklopi navigacijo">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -98,7 +98,7 @@
                             <i class="bi bi-whatsapp"></i>
                             <div>
                                 <h6 class="fw-bold mb-1">WhatsApp</h6>
-                                <a href="https://wa.me/38651844658" target="_blank" class="text-decoration-none text-dark">+386 51 844 658</a>
+                                <a href="https://wa.me/38651844658" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-dark">+386 51 844 658</a>
                                 <p class="text-muted small mb-0">Hitre povpraševanja</p>
                             </div>
                         </div>
@@ -139,7 +139,7 @@
                         <a href="tel:+38651844658" class="btn btn-primary">
                             <i class="bi bi-telephone-fill me-2"></i> Pokliči
                         </a>
-                        <a href="https://wa.me/38651844658" class="btn btn-success" target="_blank">
+                        <a href="https://wa.me/38651844658" class="btn btn-success" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-whatsapp me-2"></i> WhatsApp
                         </a>
                     </div>
@@ -174,8 +174,8 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

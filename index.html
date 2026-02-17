@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1f2937">
     <meta name="description" content="Profesionalno barvanje in prenova stanovanj. Notranje in zunanje barvanje, popravilo sten, manjša prenova. Brezplačna ponudba.">
     <meta name="keywords" content="barvanje, prenova, popravilo sten, notranje barvanje, zunanje barvanje, Slovenija">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Barvanje in Prenova | Profesionalne Storitve">
+    <meta property="og:description" content="Profesionalno barvanje in prenova stanovanj. Notranje in zunanje barvanje, popravilo sten, manjša prenova. Brezplačna ponudba.">
     <title>Barvanje in Prenova | Profesionalne Storitve</title>
     
     <!-- Google Fonts -->
@@ -20,6 +24,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Preskoči na vsebino</a>
+
     <!-- Cookie Consent Banner -->
     <div id="cookieConsent" class="cookie-consent">
         <div class="container">
@@ -37,9 +43,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html" style="font-family: 'Montserrat', 'Poppins', sans-serif; font-size: clamp(0.75rem, 3vw, 0.95rem); letter-spacing: 0.5px; font-weight: 700; display: flex; align-items: center; gap: 8px;">
-                <span class="house-logo" style="width: 30px; height: 30px; min-width: 30px;">
-                    <svg viewBox="0 0 65 52" style="width: 100%; height: 100%; stroke: #1f2937; stroke-width: 1.5; fill: none;">
+            <a class="navbar-brand navbar-brand-compact fw-bold" href="index.html">
+                <span class="house-logo house-logo-compact">
+                    <svg class="house-logo-svg-compact" viewBox="0 0 65 52">
                         <path d="M 5 26 L 32.5 6 L 60 26"/>
                         <line x1="10" y1="24" x2="10" y2="50"/>
                         <line x1="55" y1="24" x2="55" y2="50"/>
@@ -47,9 +53,9 @@
                         <rect x="27" y="35" width="11" height="15"/>
                     </svg>
                 </span>
-                <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">FATMIR BERISHA SP</span>
+                <span class="brand-text-ellipsis">FATMIR BERISHA SP</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Preklopi navigacijo">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -74,23 +80,24 @@
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
         <div class="container-fluid px-3 px-md-5 position-relative">
-            <div class="row align-items-center" style="min-height: 70vh;">
+            <div class="row align-items-center min-vh-70">
                 <div class="col-12 text-white text-center">
-                    <h1 class="hero-title" style="font-size: clamp(2rem, 8vw, 4.5rem);">FATMIR BERISHA SP</h1>
-                    <p class="hero-subtitle" style="font-size: clamp(1rem, 4vw, 1.5rem); margin-top: 20px;">Profesionalno Barvanje in Prenova</p>
-                    <div class="hero-divider" style="margin: 30px auto;"></div>
+                    <h1 class="hero-title hero-title-fluid">FATMIR BERISHA SP</h1>
+                    <p class="hero-subtitle hero-subtitle-spaced">Profesionalno Barvanje in Prenova</p>
+                    <div class="hero-divider hero-divider-spaced"></div>
                     <div class="d-flex flex-column flex-md-row gap-2 gap-md-3 justify-content-center mt-4 mt-md-5">
-                        <a href="tel:+38651844658" class="btn btn-light fw-bold" style="font-size: clamp(0.9rem, 3vw, 1rem); padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);">
+                        <a href="tel:+38651844658" class="btn btn-light fw-bold hero-action-btn">
                             <i class="bi bi-telephone-fill"></i> POKLIČITE NAS
                         </a>
-                        <a href="https://wa.me/38651844658" class="btn btn-success fw-bold" style="font-size: clamp(0.9rem, 3vw, 1rem); padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);" target="_blank">
+                        <a href="https://wa.me/38651844658" class="btn btn-success fw-bold hero-action-btn" target="_blank" rel="noopener noreferrer">
                             <i class="bi bi-whatsapp"></i> WHATSAPP
                         </a>
-                        <a href="galerija.html" class="btn btn-secondary fw-bold" style="font-size: clamp(0.9rem, 3vw, 1rem); padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);">
+                        <a href="galerija.html" class="btn btn-secondary fw-bold hero-action-btn">
                             NAŠA DELA
                         </a>
                     </div>
@@ -100,51 +107,52 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-5" style="background: white;">
+    <section class="py-5 services-section-light">
         <div class="container px-3">
             <div class="text-center mb-4 mb-md-5">
-                <h2 class="fw-bold mb-3" style="color: #1f2937; font-size: clamp(1.5rem, 5vw, 2rem); text-transform: uppercase; letter-spacing: 2px;">Naše Storitve</h2>
+                <h2 class="fw-bold mb-3 services-title-light">Naše Storitve</h2>
             </div>
             <div class="row g-2 g-sm-2 g-md-3">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-center p-3 p-sm-3 p-md-4" style="border: 2px solid #6b7280; border-radius: 10px; background: white; transition: all 0.3s ease; cursor: pointer; height: 100%; min-height: 180px;" onmouseover="this.style.boxShadow='0 8px 16px rgba(107, 114, 128, 0.2)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)'">
-                        <div style="font-size: clamp(2rem, 8vw, 2.5rem); color: #6b7280; margin-bottom: 12px;">
+                    <div class="text-center p-3 p-sm-3 p-md-4 service-card-light">
+                        <div class="service-icon-light">
                             <i class="bi bi-brush-fill"></i>
                         </div>
-                        <h5 class="fw-bold mb-2" style="text-transform: uppercase; letter-spacing: 0.5px; color: #1f2937; font-size: clamp(0.8rem, 2.5vw, 0.9rem);">Notranje Barvanje</h5>
-                        <p style="color: #6b7280; font-size: clamp(0.75rem, 2vw, 0.85rem);">Sten in stropov</p>
+                        <h5 class="fw-bold mb-2 service-card-title-light">Notranje Barvanje</h5>
+                        <p class="service-card-text-light">Sten in stropov</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-center p-3 p-sm-3 p-md-4" style="border: 2px solid #6b7280; border-radius: 10px; background: white; transition: all 0.3s ease; cursor: pointer; height: 100%; min-height: 180px;" onmouseover="this.style.boxShadow='0 8px 16px rgba(107, 114, 128, 0.2)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)'">
-                        <div style="font-size: clamp(2rem, 8vw, 2.5rem); color: #6b7280; margin-bottom: 12px;">
+                    <div class="text-center p-3 p-sm-3 p-md-4 service-card-light">
+                        <div class="service-icon-light">
                             <i class="bi bi-house-fill"></i>
                         </div>
-                        <h5 class="fw-bold mb-2" style="text-transform: uppercase; letter-spacing: 0.5px; color: #1f2937; font-size: clamp(0.8rem, 2.5vw, 0.9rem);">Eksterne Barvanje</h5>
-                        <p style="color: #6b7280; font-size: clamp(0.75rem, 2vw, 0.85rem);">Fasade in zidovi</p>
+                        <h5 class="fw-bold mb-2 service-card-title-light">Eksterne Barvanje</h5>
+                        <p class="service-card-text-light">Fasade in zidovi</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-center p-3 p-sm-3 p-md-4" style="border: 2px solid #6b7280; border-radius: 10px; background: white; transition: all 0.3s ease; cursor: pointer; height: 100%; min-height: 180px;" onmouseover="this.style.boxShadow='0 8px 16px rgba(107, 114, 128, 0.2)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)'">
-                        <div style="font-size: clamp(2rem, 8vw, 2.5rem); color: #6b7280; margin-bottom: 12px;">
+                    <div class="text-center p-3 p-sm-3 p-md-4 service-card-light">
+                        <div class="service-icon-light">
                             <svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="8" width="12" height="6" rx="1"/><rect x="14" y="9" width="5" height="4" rx="1"/><rect x="19" y="10" width="2" height="2"/><rect x="6" y="14" width="2" height="6" rx="1"/></svg>
                         </div>
-                        <h5 class="fw-bold mb-2" style="text-transform: uppercase; letter-spacing: 0.5px; color: #1f2937; font-size: clamp(0.8rem, 2.5vw, 0.9rem);">Prenova in Gips</h5>
-                        <p style="color: #6b7280; font-size: clamp(0.75rem, 2vw, 0.85rem);">Vse vrste del</p>
+                        <h5 class="fw-bold mb-2 service-card-title-light">Prenova in Gips</h5>
+                        <p class="service-card-text-light">Vse vrste del</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                    <div class="text-center p-3 p-sm-3 p-md-4" style="border: 2px solid #6b7280; border-radius: 10px; background: white; transition: all 0.3s ease; cursor: pointer; height: 100%; min-height: 180px;" onmouseover="this.style.boxShadow='0 8px 16px rgba(107, 114, 128, 0.2)'; this.style.transform='translateY(-4px)'" onmouseout="this.style.boxShadow='none'; this.style.transform='translateY(0)'">
-                        <div style="font-size: clamp(2rem, 8vw, 2.5rem); color: #6b7280; margin-bottom: 12px;">
+                    <div class="text-center p-3 p-sm-3 p-md-4 service-card-light">
+                        <div class="service-icon-light">
                             <i class="bi bi-building"></i>
                         </div>
-                        <h5 class="fw-bold mb-2" style="text-transform: uppercase; letter-spacing: 0.5px; color: #1f2937; font-size: clamp(0.8rem, 2.5vw, 0.9rem);">Fasada in Popravila</h5>
-                        <p style="color: #6b7280; font-size: clamp(0.75rem, 2vw, 0.85rem);">Kompletna prenova</p>
+                        <h5 class="fw-bold mb-2 service-card-title-light">Fasada in Popravila</h5>
+                        <p class="service-card-text-light">Kompletna prenova</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-5">
@@ -171,8 +179,8 @@
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>

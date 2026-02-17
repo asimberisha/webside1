@@ -179,17 +179,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-    
-    lastScroll = currentScroll;
-});
+if (navbar) {
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    });
+}
 
 // ===========================
 // Animation on Scroll
@@ -199,19 +201,21 @@ const observerOptions = {
     rootMargin: '0px 0px -100px 0px'
 };
 
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in-up');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in-up');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
 
-// Observe elements
-document.querySelectorAll('.service-card, .portfolio-item, .stat-card, .process-step, .team-member').forEach(el => {
-    observer.observe(el);
-});
+    // Observe elements
+    document.querySelectorAll('.service-card, .portfolio-item, .stat-card, .process-step, .team-member').forEach(el => {
+        observer.observe(el);
+    });
+}
 
 // ===========================
 // Mobile Menu Close on Link Click
@@ -221,7 +225,7 @@ const navbarCollapse = document.querySelector('.navbar-collapse');
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        if (navbarCollapse.classList.contains('show')) {
+        if (navbarCollapse && navbarCollapse.classList.contains('show') && typeof bootstrap !== 'undefined') {
             const bsCollapse = new bootstrap.Collapse(navbarCollapse);
             bsCollapse.hide();
         }
@@ -235,11 +239,15 @@ const formControls = document.querySelectorAll('.form-control, .form-select');
 
 formControls.forEach(control => {
     control.addEventListener('focus', function() {
-        this.parentElement.classList.add('focused');
+        if (this.parentElement) {
+            this.parentElement.classList.add('focused');
+        }
     });
     
     control.addEventListener('blur', function() {
-        this.parentElement.classList.remove('focused');
+        if (this.parentElement) {
+            this.parentElement.classList.remove('focused');
+        }
     });
 });
 

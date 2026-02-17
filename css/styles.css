@@ -38,6 +38,44 @@ body {
     flex-direction: column;
 }
 
+.skip-link {
+    position: absolute;
+    top: -48px;
+    left: 12px;
+    background: var(--dark-color);
+    color: var(--white);
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 2000;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 12px;
+}
+
+a:focus-visible,
+button:focus-visible,
+.btn:focus-visible,
+.nav-link:focus-visible,
+.navbar-toggler:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 /* ===========================
    Main Container
    =========================== */
@@ -96,6 +134,16 @@ footer {
     transform: scale(1.05);
 }
 
+.navbar-brand-compact {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: clamp(0.75rem, 3vw, 0.95rem);
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 /* Simple House Logo */
 .house-logo {
     width: 55px;
@@ -114,6 +162,26 @@ footer {
     stroke-linecap: round;
     stroke-linejoin: round;
     transition: all 0.3s ease;
+}
+
+.house-logo-compact {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+}
+
+.house-logo-svg-compact {
+    width: 100%;
+    height: 100%;
+    stroke: #1f2937;
+    stroke-width: 1.5;
+    fill: none;
+}
+
+.brand-text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .navbar-brand:hover .house-logo svg {
@@ -194,6 +262,10 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
+.hero-title-fluid {
+    font-size: clamp(2rem, 8vw, 4.5rem);
+}
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem;
@@ -209,12 +281,26 @@ footer {
     margin-bottom: 30px;
 }
 
+.hero-subtitle-spaced {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    margin-top: 20px;
+}
+
 .hero-divider {
     width: 100px;
     height: 3px;
     background: white;
     margin: 20px auto;
     opacity: 0.8;
+}
+
+.hero-divider-spaced {
+    margin: 30px auto;
+}
+
+.hero-action-btn {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    padding: clamp(0.5rem, 2vw, 0.75rem) clamp(1rem, 3vw, 1.5rem);
 }
 
 .hero-section .btn {
@@ -381,6 +467,96 @@ footer {
 
 .service-icon-large i {
     font-size: 3.5rem;
+}
+
+.services-section-light {
+    background: white;
+}
+
+.services-title-light {
+    color: #1f2937;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.service-card-light {
+    border: 2px solid #6b7280;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    min-height: 180px;
+}
+
+.service-card-light:hover,
+.service-card-light:focus-within {
+    box-shadow: 0 8px 16px rgba(107, 114, 128, 0.2);
+    transform: translateY(-4px);
+}
+
+.service-icon-light {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.service-card-title-light {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1f2937;
+    font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+}
+
+.service-card-text-light {
+    color: #6b7280;
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
+}
+
+.section-surface-light {
+    background: #f3f4f6;
+}
+
+.section-heading-dark {
+    color: #1f2937;
+}
+
+.section-text-muted {
+    color: #6b7280;
+}
+
+.about-title {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-subtitle {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.about-section-title {
+    color: #1f2937;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+.about-subsection-title {
+    color: #1f2937;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+
+.about-text {
+    color: #6b7280;
+    font-size: clamp(0.95rem, 2vw, 1rem);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-text-last {
+    margin-bottom: 0;
 }
 
 /* ===========================
