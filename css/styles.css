@@ -163,9 +163,9 @@ footer {
 }
 
 .house-logo-compact {
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,25 +180,42 @@ footer {
 .house-logo-svg-compact .logo-monogram {
     fill: var(--primary-dark);
     font-family: 'Montserrat', 'Poppins', sans-serif;
-    font-size: 42px;
+    font-size: 40px;
     font-weight: 900;
     font-style: italic;
     letter-spacing: -2.5px;
     transition: fill 0.3s ease;
 }
 
-.house-logo-svg-compact .logo-accent {
-    stroke: var(--secondary-color);
-    stroke-width: 4.6;
+.house-logo-svg-compact .logo-accent-shadow {
+    stroke: var(--primary-dark);
+    stroke-width: 6.2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    opacity: 0.98;
+    opacity: 0.28;
+    fill: none;
+}
+
+.house-logo-svg-compact .logo-accent {
+    stroke: var(--primary-color);
+    stroke-width: 4.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 1;
     fill: none;
     transition: stroke 0.3s ease;
 }
 
+.house-logo-svg-compact .logo-ferrule {
+    fill: var(--primary-dark);
+    opacity: 0.9;
+}
+
 .house-logo-svg-compact .logo-accent-tip {
-    fill: var(--secondary-color);
+    fill: var(--primary-color);
+    stroke: var(--primary-dark);
+    stroke-width: 0.7;
+    stroke-linejoin: round;
     transition: fill 0.3s ease;
 }
 
@@ -238,6 +255,10 @@ footer {
 
 .navbar-brand:hover .house-logo-svg-compact .logo-accent-tip {
     fill: var(--primary-dark);
+}
+
+.navbar-brand:hover .house-logo-svg-compact .logo-ferrule {
+    opacity: 1;
 }
 
 .nav-link {
