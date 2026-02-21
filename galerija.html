@@ -319,7 +319,7 @@
         
         <div class="lightbox-container">
             <div class="lightbox-content">
-                <img id="modalImage" src="" alt="Gallery Image" class="lightbox-image" decoding="async">
+                <img id="modalImage" src="" alt="Slika galerije" class="lightbox-image" decoding="async">
                 
                 <div class="lightbox-info">
                     <h5 id="categoryName"></h5>
@@ -435,7 +435,7 @@
             
             const img = document.getElementById('modalImage');
             img.onerror = function() {
-                img.src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%234b5563%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%23999%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EFotografije ni mogoce naloziti%3C/text%3E%3C/svg%3E';
+                img.src = 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22600%22%3E%3Crect fill=%22%234b5563%22 width=%22800%22 height=%22600%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2224%22 fill=%22%23999%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3EFotografije ni mogo%C4%8De nalo%C5%BEiti%3C/text%3E%3C/svg%3E';
             };
             img.src = imageSrc;
             document.getElementById('currentImage').textContent = currentImageIndex + 1;
