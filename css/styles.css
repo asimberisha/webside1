@@ -189,10 +189,17 @@ footer {
 
 .house-logo-svg-compact .logo-accent {
     stroke: var(--secondary-color);
-    stroke-width: 5;
+    stroke-width: 4.6;
     stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.98;
     fill: none;
     transition: stroke 0.3s ease;
+}
+
+.house-logo-svg-compact .logo-accent-tip {
+    fill: var(--secondary-color);
+    transition: fill 0.3s ease;
 }
 
 .brand-text-ellipsis {
@@ -227,6 +234,10 @@ footer {
 
 .navbar-brand:hover .house-logo-svg-compact .logo-accent {
     stroke: var(--primary-dark);
+}
+
+.navbar-brand:hover .house-logo-svg-compact .logo-accent-tip {
+    fill: var(--primary-dark);
 }
 
 .nav-link {
