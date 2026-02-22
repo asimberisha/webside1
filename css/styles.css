@@ -1093,8 +1093,11 @@ footer a:hover {
     }
 
     .brand-subtitle {
-        font-size: 0.42rem;
-        letter-spacing: 0.1em;
+        display: none;
+    }
+
+    .navbar-brand-compact {
+        gap: 6px;
     }
 }
 
