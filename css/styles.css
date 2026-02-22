@@ -146,6 +146,8 @@ footer {
     width: clamp(206px, 25.5vw, 268px);
     height: auto;
     display: block;
+    flex-shrink: 0;
+    max-width: 100%;
     overflow: visible;
 }
 
